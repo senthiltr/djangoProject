@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <title>Welcoem to Django App</title>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'posts/css/bootstrap.min.css' %}">
+    </head>
+<body>
+    <header class="container center-align">
+        <h1 align='center'>TraversyMedia Blog</h1>
+    </header>
+    <div class="container center-align">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <footer>
+        <h6>Copy Right @copy by Senthil</h6>
+    </footer>
+</body>
+</html>
